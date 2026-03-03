@@ -1,0 +1,18 @@
+/* Navigation bar background */
+.topnav {
+    background-color: #eeeeee;
+    width: 100%;
+  }
+  
+  /* Links inside navigation */
+  .topnav a {
+    color: #000000;
+    margin-right: 25px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Active link */
+  .topnav a.active {
+    color: #008CBA;
+  }

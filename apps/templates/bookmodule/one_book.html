@@ -1,0 +1,25 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block title %}
+Book Details
+{% endblock title%}
+
+
+{% block content %}
+
+<a href="{% url 'books.list_books' %}">Go Back</a>
+
+<h1>Details of Book</h1>
+
+<h2>Internet & World Wide Web</h2>
+<h2>Author: author name</h2>
+
+<p>
+<strong>Internet & World Wide Web</strong>
+provides a clear introduction to web programming.
+</p>
+
+<img src="{% static 'book1.jpg' %}" width="200">
+
+{% endblock content %}
