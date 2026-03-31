@@ -29,3 +29,19 @@ def viewbook(request, bookId):
 
 def aboutus(request):
     return render(request, "bookmodule/aboutus.html")
+
+
+
+
+def links(request):
+    return render(request, 'links.html')
+
+def formatting(request):
+    return render(request, 'formatting.html')
+
+def listing(request):
+    return render(request, 'listing.html')
+
+def tables(request):
+    return render(request, 'tables.html')
+
