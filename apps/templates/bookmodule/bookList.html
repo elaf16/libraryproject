@@ -1,0 +1,30 @@
+{% extends "layouts/base.html" %}
+
+
+
+{% block content %}
+
+<h2>Book Search Results</h2>
+
+{% if books %}
+    <table>
+        <thead>
+            <tr>
+                <th>Book Title</th>
+                <th>Writer</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in books %}
+                <tr>
+                    <td>{{ item.title }}</td>
+                    <td>{{ item.author }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>Sorry, no books matched your search.</p>
+{% endif %}
+
+{% endblock %}
