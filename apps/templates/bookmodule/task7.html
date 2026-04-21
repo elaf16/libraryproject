@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 7</title>
+</head>
+<body>
+    <h1>Number of students in each city</h1>
+
+    {% for item in data %}
+        <p>{{ item.address__city }} - {{ item.count }}</p>
+    {% empty %}
+        <p>No data found.</p>
+    {% endfor %}
+</body>
+</html>

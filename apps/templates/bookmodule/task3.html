@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 3</title>
+</head>
+<body>
+    <h1>Books with edition <= 3 and title/author does not contain "qu"</h1>
+
+    {% for book in books %}
+        <p>{{ book.title }} - {{ book.author }} - {{ book.price }} - {{ book.edition }}</p>
+    {% empty %}
+        <p>No books found.</p>
+    {% endfor %}
+</body>
+</html>

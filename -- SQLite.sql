@@ -1,3 +1,6 @@
-
-INSERT INTO bookmodule_book (title, author, price, edition)
-VALUES ('Clean Code', 'Robert Martin', 50.0, 1);
+-- SQLite
+INSERT INTO bookmodule_book (id, title, author, price, edition)
+VALUES ();
+('Continuous Delivery', 'J.Humble and D. Farley', 120.00, 3),
+('Reversing: Secrets of Reverse Engineer', 'E. Eilam', 97.00, 2),
+('The Hundred-Page Machine Learning Book', 'Andriy Burkov', 100.00, 4);
