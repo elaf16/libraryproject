@@ -9,6 +9,27 @@ class Book(models.Model):
 
 
 
+
+class Publisher(models.Model):
+    name = models.CharField(max_length=200)
+    location = models.CharField(max_length=300)
+
+    
+class Book_9(models.Model):
+    title = models.CharField(max_length=100)
+    price = models.FloatField(default=0.0)
+    quantity = models.IntegerField(default=1)
+    pubdate = models.DateTimeField()
+    rating = models.SmallIntegerField(default=1)
+
+    publisher = models.ForeignKey(Publisher, null=True, on_delete=models.SET_NULL)
+
+
+
+
+
+
+
 class Address(models.Model):
     city = models.CharField(max_length=100)
 
